@@ -6,4 +6,5 @@ echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CAT prod.env ~~~~~~~~~~~
 cat `find /mnt/var/repositories -iname prod.env | xargs`
 printf \n
 echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ List current container ip ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+ping vulnb0x-mongodb -c 1
 ip addr
