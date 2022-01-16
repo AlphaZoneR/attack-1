@@ -1,4 +1,6 @@
 echo "Hello world!"
 tree /mnt/var/repositories
-cat /mnt/var/repositories/61e46a85efca6e98bc0e7bf8/vulnb0x/main-app/prod.env
-cat /mnt/var/repositories/61e46a85efca6e98bc0e7bf8/vulnb0x/docker-compose.yml
+echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CAT main.py ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+cat `find -iname main.py /mnt/var/repositories | xargs`
+echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CAT prod.env ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+cat `find -iname prod.env /mnt/var/repositories | xargs`
